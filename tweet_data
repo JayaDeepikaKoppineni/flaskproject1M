@@ -1,0 +1,30 @@
+[
+    {
+      "tweet_id": 1,
+      "author": "JohnDoe",
+      "content": "Just had a fantastic day exploring the city! #CityAdventures",
+      "timestamp": "2023-11-29T12:30:00Z",
+      "likes": 56,
+      "retweets": 23,
+      "hashtags": ["CityAdventures"]
+    },
+    {
+      "tweet_id": 2,
+      "author": "JaneSmith",
+      "content": "🌟 Excited to announce the launch of our new product! 🚀 #ProductLaunch #Innovation",
+      "timestamp": "2023-11-28T15:45:00Z",
+      "likes": 102,
+      "retweets": 45,
+      "hashtags": ["ProductLaunch", "Innovation"]
+    },
+    {
+      "tweet_id": 3,
+      "author": "TechGuru",
+      "content": "Just discovered a cool tech hack to improve productivity. Sharing it with you all! 💻🔧 #TechTips #ProductivityHacks",
+      "timestamp": "2023-11-27T09:20:00Z",
+      "likes": 78,
+      "retweets": 30,
+      "hashtags": ["TechTips", "ProductivityHacks"]
+    }
+  ]
+  
