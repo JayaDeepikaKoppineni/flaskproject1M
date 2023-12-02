@@ -23,9 +23,31 @@ def get_specific_tweet(tweet_id):
     except Exception as e:
         return jsonify({"error": str(e)}), 400
 
+# Define a POST endpoint for creating a new tweet
+@app.route('/tweets', methods=['POST'])
+def create_tweet():
+    try:
+        data = request.get_json()
+
+        if 'text' not in data:
+            return jsonify({"error": "Incomplete request"}), 400
+
+        new_tweet = {
+            "id": len(tweet_data) + 1,
+            "text": data['text']
+        }
+
+        tweet_data.append(new_tweet)
+
+        return jsonify({"message": "Tweet created successfully"}), 201
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+
 # Run the Flask app if this script is the main module
 if __name__ == '__main__':
     app.run(debug=True)
+
     
 # Curl requests to test the endpoints
 
